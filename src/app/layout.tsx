@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import OCIDAuthProvider from "@/components/provider/ocid-auth-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,7 +21,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
+    <OCIDAuthProvider redirectUri="http://localhost:3000/redirect" referralCode="PARTNER6" sandboxMode={true}>
+
+    {children}
+
+</OCIDAuthProvider>
         </ThemeProvider>
       </body>
     </html>

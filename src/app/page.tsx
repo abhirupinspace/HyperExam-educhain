@@ -34,8 +34,8 @@ export default function LandingPage() {
   }, [])
 
   return (
-    <div className="flex p-10 min-h-screen flex-col">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/60">
+    <div className="flex min-h-screen flex-col">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md supports-[backdrop-filter]:bg-black/60">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <div className="flex items-center gap-2 font-bold text-xl">
             <Shield className="h-6 w-6 text-blue-600" />
@@ -69,7 +69,7 @@ export default function LandingPage() {
               className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
               style={{ y: backgroundY }}
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 [mask-image:radial-gradient(ellipse_at_center,transparent_1%,white)]" />
             <div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/10 to-transparent opacity-0 transition-opacity duration-[3s]"
               style={{ animation: "pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite" }}
@@ -206,7 +206,7 @@ export default function LandingPage() {
         {/* Features Section */}
         <section id="features" className="py-16 md:py-24 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-grid-blue bg-[size:50px]" />
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -263,7 +263,7 @@ export default function LandingPage() {
         {/* How It Works Section */}
         <section id="how-it-works" className="py-16 md:py-24 bg-blue-50 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-grid-blue bg-[size:50px]" />
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -330,7 +330,7 @@ export default function LandingPage() {
         {/* Earn Rewards Section */}
         <section id="rewards" className="py-16 md:py-24 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-grid-blue bg-[size:50px]" />
-          <div className="container px-4 md:px-6">
+          <div className="px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -405,7 +405,7 @@ export default function LandingPage() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-blue-600 text-white relative overflow-hidden">
           <div className="absolute inset-0 -z-10 bg-grid-blue bg-[size:50px] opacity-20" />
-          <div className="container px-4 md:px-6 relative">
+          <div className="px-4 md:px-6 relative">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
